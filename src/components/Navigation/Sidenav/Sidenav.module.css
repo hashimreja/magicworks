@@ -1,0 +1,23 @@
+.Sidenav{
+    width: 25vh;
+    background-color: blueviolet;
+    display: inline-block;
+    height: 100vh;
+
+}
+.Options{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.Options li{
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+.Options li:hover{
+    background-color: darkblue;
+}
