@@ -1,5 +1,6 @@
 .Sidenav{
     width: 25vh;
+    max-width: 25vh;
     background-color: blueviolet;
     display: inline-block;
     height: 100vh;
@@ -9,15 +10,27 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 .Options li{
-    color: white;
-    display: block;
-    text-align: center;
-    margin: 10px 0px 10px 0px;
-    padding: 10px;
-    cursor: pointer;
+    width: 100%;
 }
 .Options li:hover{
-    background-color: darkblue;
+    background-color: mediumseagreen;
+}
+
+.ActiveLink{
+    text-decoration: none;
+    color: white;
+    background-color: cornflowerblue;
+
+}
+.Link{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 1px;
 }

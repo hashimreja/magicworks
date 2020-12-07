@@ -1,0 +1,11 @@
+.Button{
+    background-color: gainsboro;
+    width: max-content;
+    height: max-content;
+    border-radius: 5px;
+    padding: 2px;
+}
+.Button:hover{
+    background-color: black;
+    color: white;
+}

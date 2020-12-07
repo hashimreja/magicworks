@@ -1,8 +1,9 @@
 import React from 'react';
-// import styles from './ImageMinifier.module.css';
+import styles from './ImageMinifier.module.css';
 import Aux from '../../hoc/Auxillary/Auxillary';
 import imageCompression from 'browser-image-compression';
-
+import Button from '../../components/UI/Buttons/Button';
+import Input from '../../components/UI/Input/Input';
 
 class ImageMinifier extends React.Component {
     state = {
@@ -11,6 +12,7 @@ class ImageMinifier extends React.Component {
     }
 
     handleImageUpload = (event) => {
+        console.log(event, 'file eventtt')
         this.setState({targetFile : event.target.files[0]});
     }
 
@@ -37,13 +39,16 @@ class ImageMinifier extends React.Component {
     render() {
         let download = null;
         if (this.state.base64 != null) {
-            download = <a href={JSON.parse(this.state.base64)} download='compressedfile.jpeg'>Download File</a>
+            download = <a className={styles.DownloadLink} href={JSON.parse(this.state.base64)} download={'compressed_' + this.state.targetFile.name}>Download File &#128462;</a>
         }
         return (
             <Aux>
-                <input type="file" accept="image/*" onChange={this.handleImageUpload} />
-                <button onClick={() => this.imageCompressHandler(this.state.targetFile)}>Compress</button>
+                <div className={styles.ImageMinifier}>
+                <span>Compress your images</span>
+                <Input type="file" accept="image/*" onChange={this.handleImageUpload}  />
+                <Button  onClick={() => this.imageCompressHandler(this.state.targetFile)}>Compress &#128497;</Button>
                 {download}
+                </div>
             </Aux>
         )
     }
