@@ -1,0 +1,16 @@
+.Canvas{
+    /* display: block; */
+    /* object-fit: contain; */
+    background-color: white;
+}
+.Color{
+    display: flex;
+    background-color: beige;
+    justify-content: center;
+}
+.Color input{
+    margin: 20px auto;
+}
+.Color h2{
+    text-align: center;
+}
