@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './ImageMinifier.module.css';
 import Aux from '../../hoc/Auxillary/Auxillary';
 import imageCompression from 'browser-image-compression';
-import Button from '../../components/UI/Buttons/Button';
-import Input from '../../components/UI/Input/Input';
+import Button from '../UI/Buttons/Button';
+import Input from '../UI/Input/Input';
 
 class ImageMinifier extends React.Component {
     state = {
@@ -44,7 +44,7 @@ class ImageMinifier extends React.Component {
         return (
             <Aux>
                 <div className={styles.ImageMinifier}>
-                <span>Compress your images</span>
+                <span>Compress your images &#128240;</span>
                 <Input type="file" accept="image/*" onChange={this.handleImageUpload}  />
                 <Button  onClick={() => this.imageCompressHandler(this.state.targetFile)}>Compress &#128497;</Button>
                 {download}

@@ -1,10 +1,25 @@
 .Sidenav{
     width: 25vh;
-    max-width: 25vh;
     background-color: blueviolet;
     display: inline-block;
     height: 100vh;
-    z-index : 9999;
+    -webkit-transform: translate3d(-0%, 0px, 0px);
+    transform: translate3d(-0%, 0px, 0px);
+    visibility: visible;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+}
+.SidenavClosed{
+    width: 10vh;
+    background-color: blueviolet;
+    display: inline-block;
+    height: 100vh;
+    -webkit-transform: translate3d(-0%, 0px, 0px);
+    transform: translate3d(-0%, 0px, 0px);
+    visibility: visible;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+
 }
 .Options{
     list-style: none;
@@ -29,6 +44,14 @@
     color: white;
     text-decoration: none;
     display: block;
+    text-align: left;
+    padding: 10px;
+    margin: 1px;
+}
+.LinkClosed{
+    color: white;
+    text-decoration: none;
+    display: block;
     text-align: center;
     padding: 10px;
     margin: 1px;
@@ -37,4 +60,21 @@
     width: 100%;
     margin: 0px;
     box-shadow: 0px 2px 3px;
+    cursor: pointer;
+}
+.Arrow{
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    cursor: pointer;
+    color: white;
+    font-size: 42px;
+}
+.ArrowClosed{
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    cursor: pointer;
+    color: red;
+    font-size: 24px;
 }

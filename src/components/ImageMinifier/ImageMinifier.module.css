@@ -4,21 +4,27 @@
     width: 300px;
     height: 150px;
     background-color: darkcyan;
+    transition: transform .2s; /* Animation */
     padding: 10px;
     margin: 20px;
     border-radius: 10px;
     justify-content: space-around;
     box-shadow: 0px 2px 3px;
 }
+.ImageMinifier:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px;
+}
 .ImageMinifier span {
     width: max-content;
     margin: 0px auto;
+    text-transform: capitalize;
     font-style: italic;
     color: white;
     font-size: 24px;
     margin: 0px;
-
 }
+
 
 .ImageMinifier Link{
     text-decoration: none;

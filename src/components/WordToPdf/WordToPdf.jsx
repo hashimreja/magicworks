@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './WordToPdf.module.css';
 import Aux from '../../hoc/Auxillary/Auxillary';
-import Button from '../../components/UI/Buttons/Button';
-import Input from '../../components/UI/Input/Input';
+import Button from '../UI/Buttons/Button';
+import Input from '../UI/Input/Input';
 
 
 
