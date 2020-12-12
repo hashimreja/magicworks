@@ -16,7 +16,7 @@ var storage = multer.diskStorage({
 })
 var upload = multer({ storage: storage })
 /*Get word and return pdf */
-router.post('/',upload.single('Document'),wordToPdfController.wordToHTML)
+router.post('/html',upload.single('Document'),wordToPdfController.wordToHTML)
 
 module.exports = router;
 

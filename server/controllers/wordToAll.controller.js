@@ -20,7 +20,7 @@ module.exports.wordToHTML = async (req, res) => {
             return res.status(200).json({
                 status : true,
                 message : 'successful',
-                html : html
+                data : html
             })
         })
         .done(); 
