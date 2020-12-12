@@ -5,7 +5,7 @@ app.use(bodyparser.json());
 
 
 //Routes
-const wordToPdfRoutes = require('./routes/wordToPdf.route');
+const wordToPdfRoutes = require('./routes/wordToAll.route');
 
 //apis
 app.use('/api/convert',wordToPdfRoutes);
