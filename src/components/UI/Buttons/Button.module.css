@@ -4,6 +4,7 @@
     height: max-content;
     border-radius: 5px;
     padding: 2px;
+    cursor: pointer;
 }
 .Button:hover{
     background-color: black;

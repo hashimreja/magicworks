@@ -44,7 +44,7 @@ class ImageMinifier extends React.Component {
         return (
             <Aux>
                 <div className={styles.ImageMinifier}>
-                <span>Compress your images &#128240;</span>
+                <span>Compress your images &#128464;</span>
                 <Input type="file" accept="image/*" onChange={this.handleImageUpload}  />
                 <Button  onClick={() => this.imageCompressHandler(this.state.targetFile)}>Compress &#128497;</Button>
                 {download}
