@@ -7,7 +7,7 @@
     transform: translate3d(-0%, 0px, 0px);
     visibility: visible;
     transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.7s ease 0s;
 }
 .SidenavClosed{
     width: 10vh;
@@ -18,7 +18,7 @@
     transform: translate3d(-0%, 0px, 0px);
     visibility: visible;
     transition: all 0.5s ease 0s;
-    -webkit-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
 
 }
 .Options{
@@ -64,17 +64,24 @@
 }
 .Arrow{
     position: absolute;
-    top: 2%;
+    top: 50%;
     left: 90%;
     cursor: pointer;
     color: white;
-    font-size: 42px;
+    font-size: 32px;
+    background-color:blueviolet;
+    border-radius: 100px;
+}
+.Arrow:hover{
+    color: lightblue;
 }
 .ArrowClosed{
     position: absolute;
-    top: 2%;
-    left: 90%;
+    top: 50%;
+    left: 75%;
     cursor: pointer;
-    color: red;
-    font-size: 24px;
+    color: white;
+    font-size: 32px;
+    background-color: blueviolet;
+    border-radius: 100px;
 }

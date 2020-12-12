@@ -20,7 +20,7 @@ class Sidenav extends React.Component{
             nav =  <div className={styles.Sidenav}>
                 <div>
             <img className={styles.Logo} src={Logo} alt="Logo"/>
-            <span className={styles.Arrow} onClick={this.navModeHanlder}>&#128599;</span>  
+            <span className={styles.Arrow} onClick={this.navModeHanlder}>&#9776;</span>  
             </div>
                 <div className={styles.Options}>
                     <li><NavLink activeClassName={styles.ActiveLink} className={styles.Link} to='/tools'>&#128824; &nbsp; Tools kit</NavLink></li>
@@ -33,7 +33,7 @@ class Sidenav extends React.Component{
             nav =  <div className={styles.SidenavClosed}>
             <div>
             <img className={styles.Logo} src={Logo} alt="Logo"/>
-            <span className={styles.ArrowClosed} onClick={this.navModeHanlder}>&#128599;</span>  
+            <span className={styles.ArrowClosed} onClick={this.navModeHanlder}>&#9776;</span>  
             </div>
                 <div className={styles.Options}>
                     <li><NavLink activeClassName={styles.ActiveLink} className={styles.LinkClosed} to='/tools'>&#128824; &nbsp;</NavLink></li>
