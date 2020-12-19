@@ -2,6 +2,7 @@ import styles from './Tools.module.css';
 import Aux from '../../hoc/Auxillary/Auxillary';
 import ImageMinifier from '../../components/ImageMinifier/ImageMinifier';
 import WordToPdf from '../../components/WordToPdf/WordToPdf';
+
 const Tools = () => {
     return(
         <Aux>

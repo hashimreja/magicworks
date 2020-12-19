@@ -1,0 +1,47 @@
+.chatBox{
+        background-color: teal;
+        flex-direction: column;
+        position: absolute;
+        height: 90%;
+        width: 50%;
+        left: 30%;
+        top: 5% ;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px;  
+        display: flex;
+}
+.chatBox Input {
+    width: max-content;
+    padding: 15px;
+    margin: 10px;
+}
+.chatBox Button{
+    padding: 20px;
+}
+.chatInnerBox{
+    width: 90%;
+    background-color: white;
+    margin: 10px auto;
+    height: 400px;
+    overflow: scroll;
+}
+.chatMessageUser {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.chatMessageAdmin{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message{
+    background-color: gainsboro;
+    padding: 2px;
+    border-radius: 15px;
+    margin: 10px;
+    display: inline-flex;
+}
