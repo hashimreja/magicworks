@@ -25,7 +25,7 @@ class Sidenav extends React.Component{
                 <div className={styles.Options}>
                     <li><NavLink activeClassName={styles.ActiveLink} className={styles.Link} to='/tools'>&#128824; &nbsp; Tools kit</NavLink></li>
                     <li><NavLink className={styles.Link} activeClassName={styles.ActiveLink} to='/creative'>&#128396; &nbsp; Creativity</NavLink></li>
-                    <li><NavLink className={styles.Link} activeClassName={styles.ActiveLink} to='/chat'>&#128396; &nbsp; Chatroom</NavLink></li>
+                    <li><NavLink className={styles.Link} activeClassName={styles.ActiveLink} to='/chat'>&#9993; &nbsp; Chatroom</NavLink></li>
                     <li><NavLink className={styles.Link} activeClassName={styles.ActiveLink} to='/home2'>&#128396; &nbsp; Creativity</NavLink></li>
                 </div>
             </div>
@@ -38,7 +38,7 @@ class Sidenav extends React.Component{
                 <div className={styles.Options}>
                     <li><NavLink activeClassName={styles.ActiveLink} className={styles.LinkClosed} to='/tools'>&#128824; &nbsp;</NavLink></li>
                     <li><NavLink className={styles.LinkClosed} activeClassName={styles.ActiveLink} to='/creative'>&#128396; &nbsp;</NavLink></li>
-                    <li><NavLink className={styles.LinkClosed} activeClassName={styles.ActiveLink} to='/home1'>&#128396; &nbsp;</NavLink></li>
+                    <li><NavLink className={styles.LinkClosed} activeClassName={styles.ActiveLink} to='/chat'>&#9993; &nbsp;</NavLink></li>
                     <li><NavLink className={styles.LinkClosed} activeClassName={styles.ActiveLink} to='/home2'>&#128396; &nbsp;</NavLink></li>
                 </div>
             </div>

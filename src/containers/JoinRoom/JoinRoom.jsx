@@ -13,7 +13,7 @@ const JoinRoom = () => {
         <Aux>
         <div className={styles.mainContainer}>
         <div className={styles.outerContainer}>
-            <span> Share the room name with your friends and  chat on!!</span>
+            <span style={{color : 'cyan'}}> Share the room name with your friends and  chat on!!</span>
         <span className={styles.Label}>Name</span>
         <Input type="text" name="name" id="name" onChange={e => setName(e.target.value)}/>  
          <span className={styles.Label}>Room</span>

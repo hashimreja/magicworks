@@ -21,11 +21,16 @@
     padding: 20px;
 }
 .chatInnerBox{
-    width: 90%;
-    background-color: white;
+    width: 95%;
+    background-color: midnightblue;
     margin: 10px auto;
-    height: 400px;
-    overflow: scroll;
+    height: 500px;
+    /* ov/erflow: scroll; */
+    box-shadow: 0px 10px 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow-y: scroll;
+    
 }
 .chatMessageUser {
     display: flex;
@@ -40,8 +45,27 @@
 
 .message{
     background-color: gainsboro;
-    padding: 2px;
+    padding: 15px;
     border-radius: 15px;
     margin: 10px;
     display: inline-flex;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

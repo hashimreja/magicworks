@@ -30,10 +30,15 @@ io.on('connect' , (socket) => {
         io.to(user.userRoom).emit('message' , {user : user.userName , text : message});
         callback();
     })
+    //user disconnect  
     socket.on('disconnect' , () => {
-        chatController.removeUser(socket.id)
-        console.log(`disconnected ${socket.id}`)
-    })
+      let removeduser =  chatController.removeUser(socket.id)
+        console.log(`disconnected ${socket.id , removeduser}`)
+    });
+    socket.on('udisconnect' , () => {
+        let removeduser =  chatController.removeUser(socket.id)
+          console.log(`disconnected ${socket.id , removeduser}`)
+      })
 })
 
 //Routes
