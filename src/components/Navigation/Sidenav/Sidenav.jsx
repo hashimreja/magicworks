@@ -3,12 +3,11 @@ import Aux from "../../../hoc/Auxillary/Auxillary";
 import styles from "./Sidenav.module.css";
 import { NavLink } from "react-router-dom";
 import Logo from "../../../Assets/Logos/image.png";
-
+import {v4} from 'uuid';
 class Sidenav extends React.Component {
   state = {
     closemode: false,
   };
-
   navModeHanlder = () => {
     this.setState({
       closemode: !this.state.closemode,
@@ -57,7 +56,7 @@ class Sidenav extends React.Component {
               <NavLink
                 className={styles.Link}
                 activeClassName={styles.ActiveLink}
-                to="/home2"
+                to={`/video/${v4()}`}
               >
                 &#128396; &nbsp; Creativity
               </NavLink>
@@ -106,7 +105,7 @@ class Sidenav extends React.Component {
               <NavLink
                 className={styles.LinkClosed}
                 activeClassName={styles.ActiveLink}
-                to="/home2"
+                to={`/video/${v4()}`}
               >
                 &#128396; &nbsp;
               </NavLink>
