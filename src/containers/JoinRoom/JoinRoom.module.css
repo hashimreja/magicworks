@@ -2,11 +2,7 @@
     background-color: teal;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    height: 90%;
-    width: 50%;
-    left: 30%;
-    top: 5% ;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -19,12 +15,12 @@
     color: wheat;
     padding: 10px;
     display: block;
-    width: 53%;
+    width: 30%;
     font-weight: 500;
 }
 
 .outerContainer Input{
-    width: 50%;
+    width: 30%;
     padding: 10px;
     margin-bottom: 10px;
 }

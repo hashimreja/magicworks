@@ -1,3 +1,7 @@
 .Flex{
     display: flex;
 }
+
+main{
+    flex: 1.0;
+}

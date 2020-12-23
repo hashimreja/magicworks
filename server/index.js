@@ -20,7 +20,7 @@ io.on('connect' , (socket) => {
           callback(error)
       }
         //welcome message to the user
-        socket.emit('message' , {user :'admin' , text : `welcome to the chat ${name}`});
+        socket.emit('message' , {user :'admin' , text : `welcome to the chat  ${name}`});
         //some user message joined message to others
         socket.broadcast.to(userRoom).emit('message', {user : 'admin' , text : `${name} has joined the chat`});
     })
